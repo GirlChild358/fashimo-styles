@@ -1,0 +1,223 @@
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, ul {
+	margin: 0; 
+	padding: 0; 
+	border: 0;
+}
+
+/* img rule */
+img {
+	width: 10%;
+	height: 20%;
+	margin: auto;
+	display: block;
+}
+
+body {
+	background-color: #FFF0F5; 
+	font-family: Arial, sans-serif;
+}
+
+/* Sticky Header */
+header {
+	text-align: center;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background-color: #fff;
+	padding: 10px 0;
+}
+	
+/* h1 style rule */
+h1 {
+	text-align: center;
+	color: #FF1493;
+}
+
+/* Nav style rules for mobile viewports */ 
+	nav {
+	background-color: #FF1493; 
+	padding: 10px;
+	text-align: center;
+} 
+
+nav ul {
+	list-style-type: none; 
+	margin: 0;
+	padding: 0;
+} 
+
+nav li {
+	display: inline-block; 
+	font-size: 2em;
+	border-top: none;
+} 
+
+nav li a {
+	display: block; 
+	color: #fff;
+	text-align: center; 
+	padding: 0.5em 1em; 
+	text-decoration: none;
+}
+
+/* hero img rules */
+#hero {
+	width: 100%;                 
+	height: 400px;
+	overflow: hidden;            
+	text-align: center;          
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;  
+}
+
+#hero img {
+  width: 100%;                 
+  height: 100%;                
+  object-fit: cover;           
+}
+
+/* Style rules for main content */
+main {
+	padding: 2%;
+	background-color: 	#FFC0CB; 
+	overflow: auto;
+} 
+
+main p { 
+	font-size: 1.25em; 
+} 
+
+
+#info { 
+	background-color: #FFF0F5; 
+	margin-bottom: 40px;
+	padding: 20px;
+	border-radius: 10px;
+} 
+
+.product-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 30px;
+}
+
+.box {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.box img {
+	width: 30%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-bottom: 15px;
+}
+
+.external-link {
+	color: #cc0066;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.round {
+	border-radius: 8px;
+}
+
+.action {
+	color: white;
+	background-color: #DB7093;
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+#contact {
+	text-align: center; 
+} 
+
+.tel-link {
+	background-color: #FF69B4; 
+	padding: 2.5%; 
+	margin: 0 auto; 
+	width: auto;
+	text-align: center; 
+	border-radius: 5px;
+} 
+
+.hours {
+	background-color: #FFF0F5;
+	padding: 10px;
+	border-radius: 8px;
+	font-size: 1.1em;
+}
+
+.tel-link a { 
+	color: #fff;
+	text-decoration: none; 
+	font-size: 1.5em; 
+	display: block;
+}
+
+.map { 
+	border: 5px solid #373684; 
+	width: 50%;
+	height: auto%;
+}
+
+/* Style rules for footer content */ 
+footer {
+	text-align: center; 
+	font-size: 0.75em; 
+	clear: both;
+	padding: 10px 0;
+} 
+
+footer a { 
+	color: #4645a8; 
+	text-decoration: none; 
+}
+
+dl {
+	background-color: #FFF0F5;
+	padding: 20px;
+	border-radius: 10px;
+	font-size: 1.1em;
+}
+
+dt {
+	font-weight: bold;
+	color: #FF1493;
+}
+
+dd {
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+/* product page for the figures */
+
+/*to put figures next to each other */
+.figures {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap; /*wrapping for mobile user */
+}
+
+/* Style for each figure */
+figure {
+	text-align: center;
+	max-width: 250px;
+}
+
+figure img {
+	width: 100%;
+	height: auto;
+}
+
+

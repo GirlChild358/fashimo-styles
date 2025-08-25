@@ -1,0 +1,539 @@
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, ul, figure, figcaption {
+	margin: 0; 
+	padding: 0; 
+	border: 0;
+}
+
+/* img rule */
+img {
+	width: 10%;
+	height: 20%;
+	margin: auto;
+	display: block;
+}
+
+body {
+	background-color: #FFF0F5; 
+	font-family: Arial, sans-serif;
+}
+
+/* Sticky Header */
+header {
+	text-align: center;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background-color: #fff;
+	padding: 10px 0;
+}
+	
+/* h1 style rule */
+h1 {
+	text-align: center;
+	color: #FF1493;
+}
+
+/* Style rules for navigation area */
+nav {
+	background-color: #FF1493;
+}
+
+nav ul {
+	list-style-type: none; 
+	text-align: center;
+} 
+
+nav ul li {
+	display: inline-block;
+	border-right: 1px solid #fff;
+	padding: 0 10px;
+	font-size: 1em;
+	border-top: none;
+} 
+nav ul li:last-child {
+	border-right: none;
+}
+
+nav li a {
+	display: block; 
+	color: #fff;
+	text-align: center; 
+	padding: 0.5em 1em; 
+	text-decoration: none;
+}
+
+.mobile {
+	display: block;
+}
+.tablet-desktop {
+	display: none;
+}
+
+/* hero img rules */
+#hero {
+	width: 100%;                 
+	height: 400px;
+	overflow: hidden;            
+	text-align: center;          
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;  
+}
+
+#hero img {
+  width: 100%;                 
+  height: 100%;                
+  object-fit: cover;           
+}
+
+/* Style rules for main content */
+main {
+	padding: 2%;
+	background-color: #FFC0CB; 
+	overflow: auto;
+} 
+
+main p { 
+	font-size: 1.25em; 
+} 
+
+main ul {
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+
+#info { 
+	background-color: #FFF0F5; 
+	margin-bottom: 40px;
+	padding: 20px;
+	border-radius: 10px;
+} 
+
+.product-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 30px;
+}
+
+.box {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.box img {
+	width: 30%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-bottom: 15px;
+}
+
+.external-link {
+	color: #cc0066;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.round {
+	border-radius: 8px;
+}
+
+.action {
+	color: white;
+	background-color: #DB7093;
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+#contact {
+	text-align: center; 
+} 
+
+.tel-link {
+	background-color: #FF69B4; 
+	padding: 2.5%; 
+	margin: 0 auto; 
+	width: auto;
+	text-align: center; 
+	border-radius: 5px;
+} 
+
+.hours {
+	background-color: #FFF0F5;
+	padding: 10px;
+	border-radius: 8px;
+	font-size: 1.1em;
+}
+
+.tel-link a { 
+	color: #fff;
+	text-decoration: none; 
+	font-size: 1.5em; 
+	display: block;
+}
+
+.map {
+	border: 5px solid #373684; 
+	width: 50%;
+	height: auto;
+}
+
+/* Style rules for footer content */ 
+footer {
+	text-align: center; 
+	font-size: 0.75em; 
+	clear: both;
+	padding: 10px 0;
+} 
+
+footer a { 
+	color: #4645a8; 
+	text-decoration: none; 
+}
+
+h4.mobile {
+	text-align: center;
+	margin: 10px auto;
+	font-size: 1.2em;
+	display: block;
+}
+	
+	h4.mobile a.tel-link {
+		background-color: #FF69B4;
+		color: #fff;
+		padding: 10px 15px;
+		border-radius: 5px;
+		text-decoration: none;
+		display: inline-block;
+	}
+	
+/* Ensure mobile class is visible on tablets and desktop */
+@media screen and (min-width: 600px) {
+	h4.mobile {
+		display: block !important;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	h4.mobile {
+		display: block !important;
+	}
+}
+
+dl {
+	background-color: #FFF0F5;
+	padding: 20px;
+	border-radius: 10px;
+	font-size: 1.1em;
+}
+
+dt {
+	font-weight: bold;
+	color: #FF1493;
+}
+
+dd {
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+/* product pages */
+
+/*to put figures next to each other */
+.figures {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap; /*wrapping for mobile user */
+}
+
+/* Style for each figure */
+figure {
+	text-align: center;
+	max-width: 250px;
+}
+
+figure img {
+	width: 100%;
+	height: auto;
+}
+
+/* Mobile Viewport Styles */
+@media screen and (max-width: 768px) {
+	nav {
+		background-color: #FF1493;
+		padding: 10px;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: column; /* stack vertically */
+		align-items: center;
+		padding: 0;
+	}
+	
+	nav ul li {
+		display: block;
+		font-size: 1.5em;
+		margin: 5px 0;
+		border-right: none; 
+		border-bottom: 1px solid #fff; 
+		width: 100%; 
+		text-align: center;
+	}
+	nav ul li:last-child {
+		border-bottom: none; /* don’t put border under last item */
+	}
+
+	nav li {
+		display: block;
+		font-size: 1.5em; /* smaller than desktop */
+		margin: 5px 0;
+	}
+
+	.mobile {
+		background-color: #FFF0F5;
+		padding: 15px;
+		border-radius: 8px;
+		margin: 20px auto;
+		text-align: center;
+		font-size: 1.1em;
+	}
+	
+	/* h3 text shadow */
+	.mobile h3 {
+		text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+		color: #FF1493;
+	}
+	
+	/* hides tablet-desktop info on mobile */
+	.tablet-desktop {
+		display: none;
+	}
+	
+	main article {
+		padding: 15px;
+	}
+	
+	/* h3 center-align and increase font*/
+	main article h3 {
+		text-align: center;
+		font-size: 1.5em;
+	}
+	
+	/* center pics */
+	main article img {
+		display: block;
+		margin: 0 auto 15px auto;
+		width: 80%;
+		height: auto;
+	}
+	
+	/*2nd article background-color */
+	main article:nth-of-type(2) {
+		background-color: #FFF0F5;
+		border-radius: 8px;
+	}
+	
+	/* left margin for ul */
+	main article ul {
+		margin-left: 20px;
+		margin-bottom: 15px;
+	}
+	
+	/* for the aside element */
+	main aside {
+		background-color: #ffe4e1;
+		padding: 15px;
+		margin: 20px auto;
+		border-radius: 8px;
+		text-align: center;
+		font-size: 1.1em;
+	}
+	
+	/* spans 3 columns */
+	.product-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+	
+	main p {
+		font-size: 1em;
+	}
+	
+}
+
+/* Tablet viewport style rules */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+	
+	/* #info gradient */
+	#info {
+		background: linear-gradient(135deg, #FFC0CB, #FFB6C1);
+		padding: 20px;
+		border-radius: 10px;
+	}
+	
+	/* tablet-desktop styles */
+	.tablet-desktop {
+		display: block;
+		background-color: #fff;
+		padding: 20px;
+		margin: 20px auto;
+		border-radius: 8px;
+		font-size: 1.1em;
+		text-align: center;
+	}
+	
+	/* hides mobile part on tablets */
+	.mobile {
+		display: none;
+	}
+	
+	/* removes sticky header on tablet */
+	header {
+		position: static;
+	}
+	
+	/* reset map to default */
+	.map {
+		width: 100%;
+		height: 350px;
+	}
+	
+	/* tablet grid and multiple-column layout */
+	.product-grid {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		gap: 20px;
+	}
+	
+	.figures {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	
+	nav ul {
+		display: flex;
+		flex-direction: column; /* stack vertically */
+		align-items: center;
+		padding: 0;
+	}
+	nav ul li {
+		display: block;
+		font-size: 1.5em;
+		margin: 5px 0;
+		border-right: none;             /* remove side border */
+		border-bottom: 1px solid #fff;  /* add bottom border */
+		padding: 10px 0;
+		width: 100%;
+		text-align: center;
+	}
+	nav ul li:last-child {
+		border-bottom: none;
+	}
+}
+		
+/* Desktop viewport style rules */
+@media screen and (min-width: 1025px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 50px;
+	}
+	
+	nav {
+		display: flex;
+		flex: 1;
+		justify-content: flex-end;
+		background-color: #FF1493;
+		padding: 0;
+	}
+	
+	nav ul {
+		display: flex;
+		gap: 20px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	nav ul li a {
+		display: block;
+		padding: 15px 20px;
+		text-decoration: none;
+		color: #fff;
+		font-size: 1.2em;
+		text-align: center;
+	}
+	
+	/* desktop hover */
+	nav ul li a:hover {
+		background-color: #FF69B4;
+		color: #fff;
+		border-radius: 5px;
+		transition: background-color 0.3s ease;
+	}
+	
+	main {
+		padding: 40px 100px;
+		background-color: #FFC0CB;
+	}
+	
+	main h1, main h2, main h3, main h4 {
+		font-family: 'Arial', sans-serif;
+		color: #FF1493;
+		margin-bottom: 20px;
+	}
+	
+	main h1 { font-size: 3em; }
+	main h2 { font-size: 2.5em; }
+	main h3 { font-size: 2em; }
+	main h4 { font-size: 1.8em; }
+	
+	/* multiple columns */
+	.product-grid { grid-template-columns: repeat(3, 1fr); }
+	.figures { flex-wrap: nowrap; justify-content: space-between; }
+	
+	/* desktop home page classes */
+	.mobile {
+		display: none;
+	}
+	
+	.tablet-desktop {
+		display: block;
+		background-color: #FFF0F5;
+		padding: 25px;
+		margin: 20px auto;
+		border-radius: 10px;
+		font-size: 1.2em;
+		text-align: center;
+		box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	}
+	
+}
+
+/* Large desktop viewport styles */
+@media screen and (min-width: 1440px) {
+	main { padding: 60px 150px; }
+	nav ul li a { padding: 20px 25px; font-size: 1.3em; }
+	.product-grid { grid-template-columns: repeat(3, 1fr); }
+}
+	
+/* print media rule styles */
+@media print {
+	nav, footer, #hero { display: none; }
+	body {
+		background-color: #fff;
+		color: #000;
+		font-size: 12pt;
+	}
+	main { padding: 0; }
+	img { max-width: 100%; height: auto; }
+}
